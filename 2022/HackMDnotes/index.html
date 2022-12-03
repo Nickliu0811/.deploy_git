@@ -1,0 +1,409 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HackMD 使用之Markdown 語法筆記 | 一起溜達吧!</title><meta name="author" content="Nick Liu"><meta name="copyright" content="Nick Liu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="info 提示塊標籤   HackMD&#x2F;markdown筆記MarkDown語法&#x3D;&#x3D;標題&#x3D;&#x3D;123456# H1  或 下方&#x3D;&#x3D;&#x3D; 三個等號## H2### H3#### H4##### H5###### H6  &#x3D;&#x3D;引用&#x3D;&#x3D;1&gt;   conment 引言  加上[]   可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HackMD 使用之Markdown 語法筆記">
+<meta property="og:url" content="http://example.com/2022/HackMDnotes/">
+<meta property="og:site_name" content="一起溜達吧!">
+<meta property="og:description" content="info 提示塊標籤   HackMD&#x2F;markdown筆記MarkDown語法&#x3D;&#x3D;標題&#x3D;&#x3D;123456# H1  或 下方&#x3D;&#x3D;&#x3D; 三個等號## H2### H3#### H4##### H5###### H6  &#x3D;&#x3D;引用&#x3D;&#x3D;1&gt;   conment 引言  加上[]   可以">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.imgur.com/KFi7JMM.png">
+<meta property="article:published_time" content="2022-12-03T06:57:16.000Z">
+<meta property="article:modified_time" content="2022-12-03T06:57:16.000Z">
+<meta property="article:author" content="Nick Liu">
+<meta property="article:tag" content="HackMD">
+<meta property="article:tag" content="Markdown">
+<meta property="article:tag" content="筆記">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/KFi7JMM.png">
+<meta property="fb:app_id" content="nickliu6"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/HackMDnotes/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google_site_verification" content="G-ZWF4FWFJJ3"/><meta name="baidu_site_verification" content="G-ZWF4FWFJJ3"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'G-ZWF4FWFJJ3',
+  enable_page_level_ads: 'true'
+});</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-ZWF4FWFJJ3"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ZWF4FWFJJ3');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HackMD 使用之Markdown 語法筆記',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-03 14:57:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/self/Kimbiedark.css"><meta name="robots" content="index,nofollow"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/imgtest/nick002.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.imgur.com/KFi7JMM.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">一起溜達吧!</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HackMD 使用之Markdown 語法筆記</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2022-12-03T06:57:16.000Z" title="發表於 2022-12-03 14:57:16">2022-12-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2022-12-03T06:57:16.000Z" title="更新於 2022-12-03 14:57:16">2022-12-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E6%B3%95/">程式語法</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HackMD 使用之Markdown 語法筆記"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HackMD/">HackMD</a><a class="post-meta__tags" href="/tags/Markdown/">Markdown</a><a class="post-meta__tags" href="/tags/%E7%AD%86%E8%A8%98/">筆記</a></div><div class="post_share"><div class="social-share" data-image="https://i.imgur.com/KFi7JMM.png" data-sites="facebook"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><article class="post-content" id="article-container"><div class="video-container"><iframe src="https://www.youtube.com/embed/%E6%A2%9D%E7%A2%BC" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+<div class="fj-gallery">
+          </div>
+<div class="note info flat"><p>info 提示塊標籤</p>
+</div>
+
+<h1 id="HackMD-x2F-markdown筆記"><a href="#HackMD-x2F-markdown筆記" class="headerlink" title="HackMD&#x2F;markdown筆記"></a>HackMD&#x2F;markdown筆記</h1><h2 id="MarkDown語法"><a href="#MarkDown語法" class="headerlink" title="MarkDown語法"></a>MarkDown語法</h2><h3 id="x3D-x3D-標題-x3D-x3D"><a href="#x3D-x3D-標題-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;標題&#x3D;&#x3D;"></a>&#x3D;&#x3D;標題&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sass"># H1  或 下方=== 三個等號<br>## H2<br>### H3<br>#### H4<br>##### H5<br>###### H6<br></code></pre></td></tr></table></figure>
+
+<h3 id="x3D-x3D-引用-x3D-x3D"><a href="#x3D-x3D-引用-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;引用&#x3D;&#x3D;"></a>&#x3D;&#x3D;引用&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sass">&gt;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>conment 引言  加上[]   可以插入名稱、日期、連接 例如 [name&#x3D;Nick liu] [time&#x3D;Sun, Nov 27, 2022 2:35 PM] [color&#x3D;#51d177] <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=r5FOR-YU33c" title="從無到有學習HackMD">從無到有學習HackMD</a></p>
+<blockquote>
+<p>[color&#x3D;#5ed5e5][TOC]</p>
+</blockquote>
+</blockquote>
+<h3 id="x3D-x3D-列表清單-x3D-x3D"><a href="#x3D-x3D-列表清單-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;列表清單&#x3D;&#x3D;"></a>&#x3D;&#x3D;列表清單&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs 純文字">-<br>+<br>*  <br>減號 加號 星號 加一個空格 都是列表 縮排 加上空二格 子列表<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>列表方式</li>
+<li>列表的用法</li>
+<li>列表的運行</li>
+<li>列表的顯示</li>
+</ul>
+<ul>
+<li>星號也可當列表</li>
+<li>星號也一樣哦</li>
+</ul>
+<ul>
+<li>加號也是列表</li>
+<li>會用了吧<ul>
+<li>縮排的用法<ul>
+<li>這也是縮排嗎</li>
+<li>多層項次<ul>
+<li>試看<ul>
+<li>隔二空格</li>
+</ul>
+<ul>
+<li>減號也試</li>
+</ul>
+</li>
+<li>如何</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="x3D-x3D-數列-x3D-x3D"><a href="#x3D-x3D-數列-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;數列&#x3D;&#x3D;"></a>&#x3D;&#x3D;數列&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">1.<br>需數字開頭 數字 + 反斜線 + .   ex.2019\.<br>數字的號碼 無關順序<br></code></pre></td></tr></table></figure>
+
+<ol>
+<li>123</li>
+<li>456</li>
+<li>789<ol>
+<li>123</li>
+<li>123</li>
+<li>345</li>
+</ol>
+</li>
+<li>567</li>
+<li></li>
+</ol>
+<h3 id="x3D-x3D-check-list-待辦清單-x3D-x3D"><a href="#x3D-x3D-check-list-待辦清單-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;check list 待辦清單&#x3D;&#x3D;"></a>&#x3D;&#x3D;check list 待辦清單&#x3D;&#x3D;</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> [x] 工作事項1<br><span class="hljs-bullet">-</span> [ ] 工作事項2<br><span class="hljs-bullet">-</span> [ ] 工作事項3<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 工作事項1</li>
+<li><input disabled="" type="checkbox"> 工作事項2</li>
+<li><input disabled="" type="checkbox"> 工作事項3</li>
+</ul>
+<h3 id="x3D-x3D-區塊程式碼-x3D-x3D"><a href="#x3D-x3D-區塊程式碼-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;區塊程式碼&#x3D;&#x3D;"></a>&#x3D;&#x3D;區塊程式碼&#x3D;&#x3D;</h3><p>方法一:<br>    1.前面直接加四個空白 或 Tab   為單行程式碼(上下要留空行)</p>
+<p>方法二:<br>    2.三個上下反引號   &#96;&#96;&#96;+ 語言   .&#x3D;行碼  +編號開始 !折行</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-keyword">for</span> (let i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) &#123;<br>  <span class="hljs-title function_ invoke__">setTimeout</span>(function () &#123;<br>    console.<span class="hljs-title function_ invoke__">log</span>(<span class="hljs-string">&#x27;這執行第&#x27;</span> + i + <span class="hljs-string">&#x27;次&#x27;</span>);<br>  &#125;, <span class="hljs-number">0</span>);<br></code></pre></td></tr></table></figure>
+
+<p>補充: 後面加上語法名稱</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs html">javascript 或是寫 js<br>html<br>css<br>scss<br>sass<br>json<br>php<br>python<br>java<br></code></pre></td></tr></table></figure>
+
+<p>如果你想知道你目前想寫的程式碼是否有支援高亮，你可以透過<a target="_blank" rel="noopener" href="https://highlightjs.org/static/demo/">這裡</a>查詢。</p>
+<h3 id="x3D-x3D-行內程式碼-Ctrl-E-x3D-x3D"><a href="#x3D-x3D-行內程式碼-Ctrl-E-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;行內程式碼  Ctrl+E&#x3D;&#x3D;"></a>&#x3D;&#x3D;行內程式碼  Ctrl+E&#x3D;&#x3D;</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">想要特別顯示`&lt;strong&gt;`的用法  <br></code></pre></td></tr></table></figure>
+
+<p>想要特別顯示 <code>&lt;strong&gt;</code> 的用法</p>
+<h3 id="x3D-x3D-分隔線-x3D-x3D"><a href="#x3D-x3D-分隔線-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;分隔線&#x3D;&#x3D;"></a>&#x3D;&#x3D;分隔線&#x3D;&#x3D;</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">---<br>___<br>*** 這都是<br></code></pre></td></tr></table></figure>
+
+<h3 id="x3D-x3D-斜體-Ctrl-I-x3D-x3D"><a href="#x3D-x3D-斜體-Ctrl-I-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;斜體 Ctrl+I&#x3D;&#x3D;"></a>&#x3D;&#x3D;斜體 Ctrl+I&#x3D;&#x3D;</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">*斜體*<br></code></pre></td></tr></table></figure>
+
+<p><em>斜體</em></p>
+<h3 id="x3D-x3D-粗體-Ctrl-B-x3D-x3D"><a href="#x3D-x3D-粗體-Ctrl-B-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;粗體 Ctrl+B&#x3D;&#x3D;"></a>&#x3D;&#x3D;粗體 Ctrl+B&#x3D;&#x3D;</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">**粗體**<br></code></pre></td></tr></table></figure>
+
+<p><strong>粗體</strong></p>
+<h3 id="x3D-x3D-粗體-斜線-x3D-x3D"><a href="#x3D-x3D-粗體-斜線-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;粗體+斜線&#x3D;&#x3D;"></a>&#x3D;&#x3D;粗體+斜線&#x3D;&#x3D;</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">***粗體+斜線***<br></code></pre></td></tr></table></figure>
+
+<p><em><strong>粗體+斜線</strong></em></p>
+<h3 id="x3D-x3D-底線文字-x3D-x3D"><a href="#x3D-x3D-底線文字-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;底線文字&#x3D;&#x3D;"></a>&#x3D;&#x3D;底線文字&#x3D;&#x3D;</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs text">    ++這是底線文字++<br>```    <br><br>++這是底線文字++<br><br>### ==旁註標記==<br><br>```text<br>  &#123;旁註標記|測試&#125;<br></code></pre></td></tr></table></figure>
+
+<p>{旁註標記|測試}</p>
+<h3 id="x3D-x3D-重點-x3D-x3D"><a href="#x3D-x3D-重點-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;重點&#x3D;&#x3D;"></a>&#x3D;&#x3D;重點&#x3D;&#x3D;</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">==重點標示==<br></code></pre></td></tr></table></figure>
+
+<p>文字中要顯示重點可以前後加上等於二個&#x3D;&#x3D;重點標示&#x3D;&#x3D;</p>
+<h3 id="x3D-x3D-警示區塊-x3D-x3D"><a href="#x3D-x3D-警示區塊-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;警示區塊&#x3D;&#x3D;"></a>&#x3D;&#x3D;警示區塊&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:::success<br>耶 :tada:<br>:::<br></code></pre></td></tr></table></figure>
+
+<p>:::success<br>耶 :tada:<br>:::</p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:::info<br>這是訊息 :mega:<br>:::<br></code></pre></td></tr></table></figure>
+
+<p>:::info<br>這是訊息 :mega:<br>:::</p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:::warning<br>注意 :zap:<br>:::<br></code></pre></td></tr></table></figure>
+
+<p>:::warning<br>注意 :zap:<br>:::</p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:::danger<br>喔不 :fire:<br>:::<br></code></pre></td></tr></table></figure>
+
+<p>:::danger<br>喔不 :fire:<br>:::</p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:::spoiler 點選顯示更多內容<br>找到我了！ :stuck_out_tongue_winking_eye:<br>:::<br></code></pre></td></tr></table></figure>
+
+<p>:::spoiler 點選顯示更多內容<br>找到我了！ :stuck_out_tongue_winking_eye:<br>:::</p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:::spoiler &#123;state=&quot;open&quot;&#125; 預設展開摺疊內容<br>找到我了！ :stuck_out_tongue_winking_eye:<br>:::<br></code></pre></td></tr></table></figure>
+
+<p>:::spoiler {state&#x3D;”open”} 預設展開摺疊內容<br>找到我了！ :stuck_out_tongue_winking_eye:<br>:::</p>
+<hr>
+<h3 id="x3D-x3D-刪除線-x3D-x3D"><a href="#x3D-x3D-刪除線-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;刪除線&#x3D;&#x3D;"></a>&#x3D;&#x3D;刪除線&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">~~刪除線用法~~<br></code></pre></td></tr></table></figure>
+
+<p><del>刪除線用法</del></p>
+<h3 id="x3D-x3D-上標-x3D-x3D"><a href="#x3D-x3D-上標-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;上標&#x3D;&#x3D;"></a>&#x3D;&#x3D;上標&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">文字的上標&lt;sup&gt;用法 &lt;/sup&gt;<br>^2^<br></code></pre></td></tr></table></figure>
+
+<p>文字的上標<sup>用法 </sup><br>12345^2^</p>
+<h3 id="x3D-x3D-下標-x3D-x3D"><a href="#x3D-x3D-下標-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;下標&#x3D;&#x3D;"></a>&#x3D;&#x3D;下標&#x3D;&#x3D;</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">文字的下標&lt;sub&gt;用法 &lt;/sub&gt;<br>~2~<br></code></pre></td></tr></table></figure>
+<p>文字的下標<sub>用法 </sub><br>文字的<del>下標用法</del></p>
+<h3 id="x3D-x3D-連結-x3D-x3D"><a href="#x3D-x3D-連結-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;連結&#x3D;&#x3D;"></a>&#x3D;&#x3D;連結&#x3D;&#x3D;</h3><p><strong>基本用法:</strong><br>[] 說明<br>() 連結</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">[Google](https://www.google.com.tw/)<br></code></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.google.com.tw/">Google</a></p>
+<p><strong>進階用法:</strong></p>
+<p>這裡要說明進階用法 連接 <a target="_blank" rel="noopener" href="http://google.com/" title="Google">Google</a> 另外設立連結標籤 <a target="_blank" rel="noopener" href="http://search.yahoo.com/" title="Yahoo Search">相片</a></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs text">這裡要說明進階用法 連接 [Google][] 另外設立連結標籤 [相片][]<br><br>[google]: http://google.com/        &quot;Google&quot;<br>[相片]: http://search.yahoo.com/  &quot;Yahoo Search&quot;<br></code></pre></td></tr></table></figure>
+
+<h3 id="x3D-x3D-圖片-x3D-x3D"><a href="#x3D-x3D-圖片-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;圖片&#x3D;&#x3D;"></a>&#x3D;&#x3D;圖片&#x3D;&#x3D;</h3><p><strong>基本用法1:</strong><br>![ ]：括號的內容也並非必填，提示文字。<br>( )：圖片連結位置<br>&#x3D;200x: 調整圖片尺寸 設定為寬度<br>範例:</p>
+<pre><code>![](https://picsum.photos/300/200?random=10 =200x) 
+</code></pre>
+<p><strong>進階用法:</strong></p>
+<p>如同連結一般，圖片也可以用註腳語法<br><img src="https://picsum.photos/600/100?random=10" alt="Alt text"><br>使用參考，可以在稍後的文件中再定義圖片網址</p>
+<p>萬用圖片路徑(一直變動)</p>
+<pre><code>https://picsum.photos/300/200?random=10
+</code></pre>
+<p>![](<a target="_blank" rel="noopener" href="https://picsum.photos/300/300?random=10">https://picsum.photos/300/300?random=10</a> &#x3D;200x)<br><img src="https://picsum.photos/500/200?random=10" class="w-50"></p>
+<p>方法一：嵌入HTML代码<br>使用img标签</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;img src=&quot;./xxx.png&quot; width = &quot;300&quot; height = &quot;200&quot; alt=&quot;图片名称&quot; align=center /&gt;<br></code></pre></td></tr></table></figure>
+
+<p>如果需要居中的话只要在外面包围div标签即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div  align=&quot;center&quot;&gt;    <br>...<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p>方法二：使用支持图片大小更改操作的 Mou 编辑器</p>
+<p>使用如下语法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">![](./pic/pic1_50.png =100x100)<br></code></pre></td></tr></table></figure>
+
+
+<p>直接在图片后面加上对应的CSS样式即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">![test image size](url)&#123;:class=&quot;img-responsive&quot;&#125;<br>![test image size](url)&#123;:height=&quot;50%&quot; width=&quot;50%&quot;&#125;<br>![test image size](url)&#123;:height=&quot;100px&quot; width=&quot;400px&quot;&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="UML-圖表"><a href="#UML-圖表" class="headerlink" title="UML 圖表"></a>UML 圖表</h2><h3 id="x3D-x3D-循序圖-x3D-x3D"><a href="#x3D-x3D-循序圖-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;循序圖&#x3D;&#x3D;"></a>&#x3D;&#x3D;循序圖&#x3D;&#x3D;</h3><blockquote>
+<p>更多關於 <strong>循序圖</strong> 語法 <a target="_blank" rel="noopener" href="http://bramp.github.io/js-sequence-diagrams/">在這裡</a>.</p>
+</blockquote>
+<p>您可以像是以下使用循序圖：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sequence">艾莉絲-&gt;包柏: 哈摟，你好嗎？<br>Note right of 包柏: 包柏思考中<br>包柏--&gt;艾莉絲: 我很好，謝謝！<br>Note left of 艾莉絲: 艾莉絲回應<br>艾莉絲-&gt;包柏: 最近過得怎樣？<br></code></pre></td></tr></table></figure>
+
+<h3 id="x3D-x3D-流程圖-x3D-x3D"><a href="#x3D-x3D-流程圖-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;流程圖&#x3D;&#x3D;"></a>&#x3D;&#x3D;流程圖&#x3D;&#x3D;</h3><blockquote>
+<p>更多關於 <strong>流程圖</strong> 語法 <a target="_blank" rel="noopener" href="http://adrai.github.io/flowchart.js/">在這裡</a>.</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs flow">st=&gt;start: 開始<br>e=&gt;end: 結束<br>op=&gt;operation: 我的操作<br>op2=&gt;operation: 啦啦啦<br>cond=&gt;condition: 是或否？<br><br>st-&gt;op-&gt;op2-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op2<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs flow">st=&gt;start: 開始|past:&gt;http://www.google.com[blank]<br>e=&gt;end: 結束|future:&gt;http://www.google.com<br>op1=&gt;operation: 我的操作|過去<br>op2=&gt;operation: 內容|當前<br>sub1=&gt;subroutine: 子程序|invalid<br>cond=&gt;condition: 是<br>or 否?|已批准:&gt;http://www.google.com<br>c2=&gt;condition: 好主意|rejected<br>io=&gt;inputoutput: 抓著一些東西...|future<br><br>st-&gt;op1(right)-&gt;cond<br>cond(yes, right)-&gt;c2<br>cond(no)-&gt;sub1(left)-&gt;op1<br>c2(yes)-&gt;io-&gt;e<br>c2(no)-&gt;op2-&gt;e<br></code></pre></td></tr></table></figure>
+
+
+<h3 id="x3D-x3D-組織圖-x3D-x3D"><a href="#x3D-x3D-組織圖-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;組織圖&#x3D;&#x3D;"></a>&#x3D;&#x3D;組織圖&#x3D;&#x3D;</h3><blockquote>
+<p>更多關於 <strong>組織圖</strong> 語法 <a target="_blank" rel="noopener" href="http://www.tonyballantyne.com/graphs.html">在這裡</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs graphviz">digraph hierarchy &#123;<br><br>                nodesep=1.0 // increases the separation between nodes<br>                <br>                node [color=Red,fontname=Courier,shape=box] //All nodes will this shape and colour<br>                edge [color=Blue, style=dashed] //All the lines look like this<br><br>                公司組織圖-&gt;&#123;人事部 研發部 業務部&#125;<br>                人事部-&gt;&#123;總務部 HR部 發展部&#125;<br>                業務部-&gt;ITManager<br>                &#123;rank=same;ITManager 總務部 HR部 發展部&#125;  // Put them on the same level<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="x3D-x3D-甘特圖-x3D-x3D"><a href="#x3D-x3D-甘特圖-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;甘特圖&#x3D;&#x3D;"></a>&#x3D;&#x3D;甘特圖&#x3D;&#x3D;</h3><blockquote>
+<p>更多關於 <strong>甘特圖</strong> 語法 <a target="_blank" rel="noopener" href="http://mermaid-js.github.io/mermaid">在這裡</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs mermaid">gantt<br>    title A Gantt Diagram<br><br>    section Section<br>    A task           :a1, 2014-01-01, 30d<br>    Another task     :after a1  , 20d<br>    section Another<br>    Task in sec      :2014-01-12  , 12d<br>    anther task      : 24d<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>更多關於 <strong>abc</strong> 語法 <a target="_blank" rel="noopener" href="http://abcnotation.com/learn">在這裡</a><br>更多關於 <strong>vega</strong> 語法 <a target="_blank" rel="noopener" href="https://vega.github.io/vega-lite/docs">在這裡</a></p>
+</blockquote>
+<h3 id="x3D-x3D-小圖示運用-x3D-x3D"><a href="#x3D-x3D-小圖示運用-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;小圖示運用&#x3D;&#x3D;"></a>&#x3D;&#x3D;小圖示運用&#x3D;&#x3D;</h3><blockquote>
+<p>完整的表情符號列表 <a target="_blank" rel="noopener" href="https://github.com/ikatyang/emoji-cheat-sheet">在這裡</a><br>常用的符號<br><a target="_blank" rel="noopener" href="https://github.com/ikatyang/emoji-cheat-sheet#arrow">箭頭符號</a><br><a target="_blank" rel="noopener" href="https://github.com/ikatyang/emoji-cheat-sheet#computer">計算機</a><br>:arrow_right: <code>:arrow_right:</code><br>:arrow_left: <code>:arrow_left:</code><br>:tada: <code>:tada:</code><br>:bulb: <code>:bulb:</code><br>:book: <code>:book:</code><br>:hourglass: <code>:hourglass:</code></p>
+</blockquote>
+<p><i class="fa fa-file-text"></i> <strong>文件</strong> <code>&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-pencil fa-fw"></i> <strong>編輯</strong> <code>&lt;i class=&quot;fa fa-pencil fa-fw&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-eye fa-fw"></i> <strong>看</strong> <code>&lt;i class=&quot;fa fa-eye fa-fw&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-columns fa-fw"></i> <strong>二欄分頁</strong> <code>&lt;i class=&quot;fa fa-columns fa-fw&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-camera"></i> <strong>相機</strong> <code>&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-share-alt"></i> <strong>分享</strong> <code>&lt;i class=&quot;fa fa-share-alt&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-dropbox"></i> <strong>dropbox</strong> <code>&lt;i class=&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-github"></i> <strong>github</strong> <code>&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-clipboard"></i> <strong>剪貼簿</strong> <code>&lt;i class=&quot;fa fa-clipboard&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-toggle-on"></i> <strong>開關</strong> <code>&lt;i class=&quot;fa fa-toggle-on&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-tv"></i> <strong>簡報模式</strong> <code>&lt;i class=&quot;fa fa-tv&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-book"></i> <strong>書籍模式</strong> <code>&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-bars"></i> <strong>小按鈕</strong> <code>&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;</code><br><i class="octicon octicon-link"></i> <strong>錨點</strong> <code>&lt;i class=&quot;octicon octicon-link&quot;&gt;&lt;/i&gt;</code></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HackMD/">HackMD</a><a class="post-meta__tags" href="/tags/Markdown/">Markdown</a><a class="post-meta__tags" href="/tags/%E7%AD%86%E8%A8%98/">筆記</a></div><div class="post_share"><div class="social-share" data-image="https://i.imgur.com/KFi7JMM.png" data-sites="facebook"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="ads-wrap"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="xxxxxxxxxxxx" data-ad-client="ca-pub-xxxxxxxxxx" data-ad-slot="xxxxxxxxxx"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2022/hello-world/"><img class="prev-cover" src="https://i.imgur.com/iOVeEc5.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">程式-Hexo 指令備忘錄</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 評論</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HackMD-x2F-markdown%E7%AD%86%E8%A8%98"><span class="toc-number">1.</span> <span class="toc-text">HackMD&#x2F;markdown筆記</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#MarkDown%E8%AA%9E%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">MarkDown語法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E6%A8%99%E9%A1%8C-x3D-x3D"><span class="toc-number">1.1.1.</span> <span class="toc-text">&#x3D;&#x3D;標題&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%BC%95%E7%94%A8-x3D-x3D"><span class="toc-number">1.1.2.</span> <span class="toc-text">&#x3D;&#x3D;引用&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%88%97%E8%A1%A8%E6%B8%85%E5%96%AE-x3D-x3D"><span class="toc-number">1.1.3.</span> <span class="toc-text">&#x3D;&#x3D;列表清單&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E6%95%B8%E5%88%97-x3D-x3D"><span class="toc-number">1.1.4.</span> <span class="toc-text">&#x3D;&#x3D;數列&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-check-list-%E5%BE%85%E8%BE%A6%E6%B8%85%E5%96%AE-x3D-x3D"><span class="toc-number">1.1.5.</span> <span class="toc-text">&#x3D;&#x3D;check list 待辦清單&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%8D%80%E5%A1%8A%E7%A8%8B%E5%BC%8F%E7%A2%BC-x3D-x3D"><span class="toc-number">1.1.6.</span> <span class="toc-text">&#x3D;&#x3D;區塊程式碼&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E8%A1%8C%E5%85%A7%E7%A8%8B%E5%BC%8F%E7%A2%BC-Ctrl-E-x3D-x3D"><span class="toc-number">1.1.7.</span> <span class="toc-text">&#x3D;&#x3D;行內程式碼  Ctrl+E&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%88%86%E9%9A%94%E7%B7%9A-x3D-x3D"><span class="toc-number">1.1.8.</span> <span class="toc-text">&#x3D;&#x3D;分隔線&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E6%96%9C%E9%AB%94-Ctrl-I-x3D-x3D"><span class="toc-number">1.1.9.</span> <span class="toc-text">&#x3D;&#x3D;斜體 Ctrl+I&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E7%B2%97%E9%AB%94-Ctrl-B-x3D-x3D"><span class="toc-number">1.1.10.</span> <span class="toc-text">&#x3D;&#x3D;粗體 Ctrl+B&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E7%B2%97%E9%AB%94-%E6%96%9C%E7%B7%9A-x3D-x3D"><span class="toc-number">1.1.11.</span> <span class="toc-text">&#x3D;&#x3D;粗體+斜線&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%BA%95%E7%B7%9A%E6%96%87%E5%AD%97-x3D-x3D"><span class="toc-number">1.1.12.</span> <span class="toc-text">&#x3D;&#x3D;底線文字&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E9%87%8D%E9%BB%9E-x3D-x3D"><span class="toc-number">1.1.13.</span> <span class="toc-text">&#x3D;&#x3D;重點&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E8%AD%A6%E7%A4%BA%E5%8D%80%E5%A1%8A-x3D-x3D"><span class="toc-number">1.1.14.</span> <span class="toc-text">&#x3D;&#x3D;警示區塊&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%88%AA%E9%99%A4%E7%B7%9A-x3D-x3D"><span class="toc-number">1.1.15.</span> <span class="toc-text">&#x3D;&#x3D;刪除線&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E4%B8%8A%E6%A8%99-x3D-x3D"><span class="toc-number">1.1.16.</span> <span class="toc-text">&#x3D;&#x3D;上標&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E4%B8%8B%E6%A8%99-x3D-x3D"><span class="toc-number">1.1.17.</span> <span class="toc-text">&#x3D;&#x3D;下標&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E9%80%A3%E7%B5%90-x3D-x3D"><span class="toc-number">1.1.18.</span> <span class="toc-text">&#x3D;&#x3D;連結&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%9C%96%E7%89%87-x3D-x3D"><span class="toc-number">1.1.19.</span> <span class="toc-text">&#x3D;&#x3D;圖片&#x3D;&#x3D;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UML-%E5%9C%96%E8%A1%A8"><span class="toc-number">1.2.</span> <span class="toc-text">UML 圖表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%BE%AA%E5%BA%8F%E5%9C%96-x3D-x3D"><span class="toc-number">1.2.1.</span> <span class="toc-text">&#x3D;&#x3D;循序圖&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E6%B5%81%E7%A8%8B%E5%9C%96-x3D-x3D"><span class="toc-number">1.2.2.</span> <span class="toc-text">&#x3D;&#x3D;流程圖&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E7%B5%84%E7%B9%94%E5%9C%96-x3D-x3D"><span class="toc-number">1.2.3.</span> <span class="toc-text">&#x3D;&#x3D;組織圖&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E7%94%98%E7%89%B9%E5%9C%96-x3D-x3D"><span class="toc-number">1.2.4.</span> <span class="toc-text">&#x3D;&#x3D;甘特圖&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x3D-x3D-%E5%B0%8F%E5%9C%96%E7%A4%BA%E9%81%8B%E7%94%A8-x3D-x3D"><span class="toc-number">1.2.5.</span> <span class="toc-text">&#x3D;&#x3D;小圖示運用&#x3D;&#x3D;</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By Nick Liu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">嗨 ! 我是六哥 歡迎光臨 ~</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直達評論"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到頂部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://example.com/2022/HackMDnotes/'
+    this.page.identifier = '/2022/HackMDnotes/'
+    this.page.title = 'HackMD 使用之Markdown 語法筆記'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://nickliu0811-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script src="/_data/hexo_resize_image.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
